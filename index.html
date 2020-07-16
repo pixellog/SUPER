@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SK Planet 총괄 어드민 - 센서 정보</title>
+	<link rel="stylesheet" href="css/super.css">
+</head>
+<body>
+
+<!-- #top : 상단 영역 -->
+<header id="top" class="fixed-top">
+	
+	<!-- .top-header : 로고 / 상단메뉴 영역 -->
+	<div class="top-header">
+		<div class="container">
+			<!-- .logo : 로고 -->
+			<a class="logo" href="."><img src="img/skp-logo.svg" alt="SK Planet" height="36"><span>RBI 건설 모니터링 시스템</span></a>
+			<!-- .nav : 상단메뉴 -->
+			<ul class="nav">
+				<li class="nav-item"><a href="login.html" class="nav-link">관리자님 <em>로그아웃</em></a></li>
+			</ul> <!-- /.nav -->
+		</div> <!-- /.container -->
+	</div> <!-- /.top-header -->
+
+	<!-- .top-menu : 현장선택 / 메뉴 영역 -->
+	<div class="top-menu">
+		<div class="container">
+			<div class="top-menu-row">
+				
+				<!-- .dropdown-group 선택 영역 -->
+				<div class="dropdown-group">
+					<!-- .dropdown : 건설사 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">현대건설</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item active" href=".">현대건설</a>
+							<a class="dropdown-item" href=".">옴니센스</a>
+						</div>
+					</div> <!-- /.dropdown -->
+					
+					<!-- .dropdown : 현장 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">테헤란 237</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item active" href=".">테헤란 237</a>
+							<a class="dropdown-item" href=".">옴니센스 123</a>
+						</div>
+					</div> <!-- /.dropdown -->
+				</div> <!-- /.dropdown-group -->
+
+				<!-- .nav : 중간메뉴 -->
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="company.html">업체현황</a></li>
+				</ul> <!-- /.nav -->
+			</div> <!-- /.top-menu-row -->
+
+			<div class="top-menu-row">
+				<!-- .nav : 하단메뉴 -->
+				<ul class="nav">
+					<li class="nav-item active"><a class="nav-link" href=".">센서정보</a></li>
+					<li class="nav-item"><a class="nav-link" href="authority.html">권한설정</a></li>
+				</ul> <!-- /.nav -->
+			</div> <!-- /.top-menu-row -->
+		</div> <!-- /.container -->	
+	</div> <!-- /.top-menu -->
+</header> <!-- /#top -->
+
+
+<!-- #main : 메인 영역 -->
+<div id="main">
+	<div class="container">
+	
+		<!-- .section : 미세먼지(일반형) -->
+		<div class="section">
+			<div class="section-header">
+				<h3>미세먼지(일반형) (2)</h3>
+				<div class="nav">
+					<!-- 해당 센서의 체크박스가 변경되면 "저장"버튼 활성화, 평소에는 비활성 -->
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary" data-toggle="modal" data-target="#modal-confirm">저장</a></div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="row form-table status-good">
+					<div class="col-4 form-title"><h5>미세먼지 (일반형) 본관 1층 <em>(양호)</em></h5></div>
+					<div class="col form-body">
+						<div class="form-inline">					
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-1-1" value="check_1_1" checked>
+								<label class="custom-control-label" for="check-1-1">온도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-1-2" value="check_1_2" checked>
+								<label class="custom-control-label" for="check-1-2">습도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-1-3" value="check_1_3">
+								<label class="custom-control-label" for="check-1-3">PM1.0</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-1-4" value="check_1_4" checked>
+								<label class="custom-control-label" for="check-1-4">PM2.5</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-1-5" value="check_1_5" checked>
+								<label class="custom-control-label" for="check-1-5">PM10</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row form-table status-bad">
+					<div class="col-4 form-title">
+						<h5>미세먼지 (일반형) 별관 <em>(불안정)</em></h5>
+					</div>
+					<div class="col form-body">
+						<div class="form-inline">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-2-1" value="check_2_1">
+								<label class="custom-control-label" for="check-2-1">온도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-2-2" value="check_2_2">
+								<label class="custom-control-label" for="check-2-2">습도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-2-3" value="check_2_3">
+								<label class="custom-control-label" for="check-2-3">PM1.0</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-2-4" value="check_2_4" checked>
+								<label class="custom-control-label" for="check-2-4">PM2.5</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-2-5" value="check_2_5" checked>
+								<label class="custom-control-label" for="check-2-5">PM10</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div> <!-- /.section -->
+
+		<!-- .section : 미세먼지(고급형) -->
+		<div class="section">
+			<div class="section-header">
+				<h3>미세먼지(고급형) (1)</h3>
+				<div class="nav">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary dis">저장</a></div>
+				</div>
+			</div>
+			<div class="section-body">
+				
+				<div class="row form-table status-good">
+					<div class="col-4 form-title">
+						<h5>미세먼지 (고급형) 옥상 <em>(양호)</em></h5>
+					</div>
+					<div class="col form-body">
+						<div class="form-inline">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-1" value="check_3_1" checked>
+								<label class="custom-control-label" for="check-3-1">온도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-2" value="check_3_2" checked>
+								<label class="custom-control-label" for="check-3-2">습도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-3" value="check_3_3">
+								<label class="custom-control-label" for="check-3-3">PM1.0</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-4" value="check_3_4" checked>
+								<label class="custom-control-label" for="check-3-4">PM2.5</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-5" value="check_3_5" checked>
+								<label class="custom-control-label" for="check-3-5">PM10</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-3-5" value="check_3_6" checked>
+								<label class="custom-control-label" for="check-3-6">TSP</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div> <!-- /.section-body -->
+		</div> <!-- /.section -->
+
+		<!-- .section : 기상관측 -->
+		<div class="section">
+			<div class="section-header">
+				<h3>기상관측 (1)</h3>
+				<div class="nav">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary dis">저장</a></div>
+				</div>
+			</div>
+			<div class="section-body">
+
+				<div class="row form-table status-good">
+					<div class="col-4 form-title">
+						<h5>기상관측 센서 <em>(양호)</em></h5>
+					</div>
+					<div class="col form-body">
+						<div class="form-inline">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-1" value="check_4_1" checked>
+								<label class="custom-control-label" for="check-4-1">온도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-2" value="check_4_2" checked>
+								<label class="custom-control-label" for="check-4-2">습도</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-3" value="check_4_3" checked>
+								<label class="custom-control-label" for="check-4-3">강수량</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-4" value="check_4_4" checked>
+								<label class="custom-control-label" for="check-4-4">기압</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-5" value="check_4_5" checked>
+								<label class="custom-control-label" for="check-4-5">풍향</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-4-5" value="check_4_6" checked>
+								<label class="custom-control-label" for="check-4-6">풍속</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- /.section-body -->
+		</div> <!-- /.section -->
+
+		<!-- .section : 가스센서 -->
+		<div class="section">
+			<div class="section-header">
+				<h3>가스센서 (1)</h3>
+				<div class="nav">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary dis">저장</a></div>
+				</div>
+			</div>
+			<div class="section-body">
+				
+				<div class="row form-table status-good">
+					<div class="col-4 form-title">
+						<h5>가스센서 <em>(양호)</em></h5>
+					</div>
+					<div class="col form-body">
+						<div class="form-inline">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-5-1" value="check_5_1" checked>
+								<label class="custom-control-label" for="check-5-1">CO</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-5-2" value="check_5_2" checked>
+								<label class="custom-control-label" for="check-5-2">CO2</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" id="check-5-3" value="check_5_3" checked>
+								<label class="custom-control-label" for="check-5-3">H2S</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div> <!-- /.section-body -->
+		</div> <!-- /.section -->
+
+		<!-- .section : 진동 -->
+		<div class="section">
+			<div class="section-header">
+				<h3>진동 (3)</h3>
+				<!--<div class="nav">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary">저장</a></div>
+				</div>
+				-->
+			</div>
+			<div class="section-body">
+				
+				<div class="row form-table status-good">
+					<div class="col form-title">
+						<h5>남쪽펜스 <em>(양호)</em></h5>
+					</div>
+				</div>
+
+				<div class="row form-table status-good">
+					<div class="col form-title">
+						<h5>동쪽펜스 <em>(양호)</em></h5>
+					</div>
+				</div>
+
+				<div class="row form-table status-good">
+					<div class="col form-title">
+						<h5>서쪽펜스 <em>(양호)</em></h5>
+					</div>
+				</div>
+
+			</div>
+		</div> <!-- /.section -->
+
+		<!-- .section : 소음 -->
+		<div class="section">
+			<div class="section-header">
+				<h3>소음 (1)</h3>
+				<!--
+				<div class="nav">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-primary">저장</a></div>
+				</div>
+				-->
+			</div>
+			<div class="section-body">
+				
+				<div class="row form-table status-good">
+					<div class="col form-title">
+						<h5>소음 <em>(양호)</em></h5>
+					</div>
+				</div>
+
+			</div>
+		</div> <!-- /.section -->
+
+	</div> <!-- /.container -->
+</div> <!-- /#main -->
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="copyright">Copyright SKPlanet. All Rights Reserved.</div>
+	</div>
+</footer>
+
+
+<!-- #modal-confirm -->
+<div id="modal-confirm" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+				</button>
+			</div> <!-- /.modal-header -->
+			
+			<div class="modal-body">
+
+				<div class="msg-box center">
+					<strong>미세먼지(일반형) 본관1층</strong><br>설정 정보를 변경/저장 하시겠습니까?
+				</div>
+			
+			</div> <!-- /.modal-body -->
+			
+			<!-- .modal-footer : 모달 하단 영역 -->
+			<div class="modal-footer">
+				<a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+				<a href="#" class="btn btn-primary" data-dismiss="modal">저장</a>
+			</div> <!-- /.modal-footer -->
+
+		</div> <!-- /.modal-content -->
+	</div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-confirm -->
+
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

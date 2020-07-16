@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SK Planet 총괄 어드민 - 권한설정 : 수정</title>
+	<link rel="stylesheet" href="css/super.css">
+</head>
+<body>
+
+<!-- #top : 상단 영역 -->
+<header id="top" class="fixed-top">
+	
+	<!-- .top-header : 로고 / 상단메뉴 영역 -->
+	<div class="top-header">
+		<div class="container">
+			<!-- .logo : 로고 -->
+			<a class="logo" href="."><img src="img/skp-logo.svg" alt="SK Planet" height="36"><span>RBI 건설 모니터링 시스템</span></a>
+			<!-- .nav : 상단메뉴 -->
+			<ul class="nav">
+				<li class="nav-item"><a href="login.html" class="nav-link">관리자님 <em>로그아웃</em></a></li>
+			</ul> <!-- /.nav -->
+		</div> <!-- /.container -->
+	</div> <!-- /.top-header -->
+
+	<!-- .top-menu : 현장선택 / 메뉴 영역 -->
+	<div class="top-menu">
+		<div class="container">
+			<div class="top-menu-row">
+				
+				<!-- .dropdown-group 선택 영역 -->
+				<div class="dropdown-group">
+					<!-- .dropdown : 건설사 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">현대건설</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item active" href=".">현대건설</a>
+							<a class="dropdown-item" href=".">옴니센스</a>
+						</div>
+					</div> <!-- /.dropdown -->
+					
+					<!-- .dropdown : 현장 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">테헤란 237</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item active" href=".">테헤란 237</a>
+							<a class="dropdown-item" href=".">옴니센스 123</a>
+						</div>
+					</div> <!-- /.dropdown -->
+				</div> <!-- /.dropdown-group -->
+
+				<!-- .nav : 중간메뉴 -->
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="company.html">업체현황</a></li>
+				</ul> <!-- /.nav -->
+			</div> <!-- /.top-menu-row -->
+
+			<div class="top-menu-row">
+				<!-- .nav : 하단메뉴 -->
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href=".">센서정보</a></li>
+					<li class="nav-item active"><a class="nav-link" href="authority.html">권한설정</a></li>
+				</ul> <!-- /.nav -->
+			</div> <!-- /.top-menu-row -->
+		</div> <!-- /.container -->	
+	</div> <!-- /.top-menu -->
+</header> <!-- /#top -->
+
+
+<!-- #main : 메인 영역 -->
+<div id="main">
+	<div class="container">
+	
+		<!-- .section : 권한설정 -->
+		<div class="section">
+			<div class="section-body">
+				<div class="board">
+					<div class="board-header">
+						<div class="board-row center">
+							<div class="board-item num">번호</div>
+							<div class="board-item">권한</div>
+							<div class="board-item">아이디</div>
+							<div class="board-item">비밀번호</div>
+							<div class="board-item num"></div>
+						</div>
+					</div> <!-- ./board-header -->
+
+					<div class="board-body">
+
+						<!-- 등록된 권한이 없을 때 -->
+						<div class="board-row">
+							<div class="board-item nodata">등록된 권한이 없습니다.</div>
+						</div><!-- /.board-row -->
+
+						<!-- 등록된 권한이 있을 때 -->
+						<div class="board-row center v-center">
+							<div class="board-item num">1</div>
+							<div class="board-item">
+								<div class="dropdown">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">마스터</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item active" href="#">마스터</a>
+										<a class="dropdown-item" href="#">일반</a>
+									</div>
+								</div> <!-- /.dropdown -->
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="abcdef111"><a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-overlap">중복체크</a>
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="1yEdIw@32#">
+							</div>
+							<div class="board-item num"><a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-del">삭제</a></div>
+						</div> <!-- /.board-row -->
+
+						<div class="board-row center v-center">
+							<div class="board-item num">2</div>
+							<div class="board-item">
+								<div class="dropdown">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">마스터</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item active" href="#">마스터</a>
+										<a class="dropdown-item" href="#">일반</a>
+									</div>
+								</div> <!-- /.dropdown -->
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="abcdef111"><a href="#" class="btn btn-secondary dis" data-toggle="modal" data-target="#modal-overlap">중복체크</a>
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="1yEdIw@32#">
+							</div>
+							<div class="board-item num"><a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-del">삭제</a></div>
+						</div> <!-- /.board-row -->
+
+						<div class="board-row center v-center">
+							<div class="board-item num">3</div>
+							<div class="board-item">
+								<div class="dropdown">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">마스터</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item active" href="#">마스터</a>
+										<a class="dropdown-item" href="#">일반</a>
+									</div>
+								</div> <!-- /.dropdown -->
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="abcdef111"><a href="#" class="btn btn-secondary dis" data-toggle="modal" data-target="#modal-overlap">중복체크</a>
+							</div>
+							<div class="board-item">
+								<input class="form-control" type="text" value="1yEdIw@32#">
+							</div>
+							<div class="board-item num"><a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-del">삭제</a></div>
+						</div> <!-- /.board-row -->
+		
+					</div> <!-- /.board-body -->
+				</div> <!-- /.board -->
+			</div>
+			<div class="section-footer">
+				<div class="nav left">
+					<div class="nav-item"><a href="#" class="nav-link btn btn-secondary">+ 추가</a></div><!-- 추가버튼을 누르면 한출이 추가 됨 -->
+					<em class="btn-helper"> ※ 비밀번호는 영문,숫자,특수문자중 2가지이상 혼합하여 8글자이상 입력.</em>
+				</div>
+				<div class="nav">
+					<div class="nav-item"><a href="authority.html" class="nav-link btn btn-secondary">취소</a></div>
+					<div class="nav-item"><a href="authority.html" class="nav-link btn btn-primary"  data-toggle="modal" data-target="#modal-confirm">저장</a></div>
+				</div>
+			</div>
+		</div> <!-- /.section -->
+
+	</div> <!-- /.container -->
+</div> <!-- /#main -->
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="copyright">Copyright SKPlanet. All Rights Reserved.</div>
+	</div>
+</footer>
+
+
+<!-- #modal-del -->
+<div id="modal-del" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">권한 삭제</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+				</button>
+			</div> <!-- /.modal-header -->
+			
+			<div class="modal-body">
+
+				<div class="msg-box center">
+					<strong>abcdef111</strong> 님의 권한을 <strong>삭제</strong>하시겠습니까?
+				</div>
+			
+			</div> <!-- /.modal-body -->
+			
+			<!-- .modal-footer : 모달 하단 영역 -->
+			<div class="modal-footer">
+				<a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+				<a href="#" class="btn btn-primary">삭제</a>
+			</div> <!-- /.modal-footer -->
+
+		</div> <!-- /.modal-content -->
+	</div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-del -->
+
+
+<!-- #modal-overlap -->
+<div id="modal-overlap" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">아이디 중복 체크</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+				</button>
+			</div> <!-- /.modal-header -->
+			
+			<div class="modal-body">
+
+				<!-- 사용가능한 아이디 일때 -->	
+				<div class="msg-box center">
+					<strong>abcdef111</strong>은 <strong class="ok">사용가능한 아이디</strong> 입니다.
+				</div>
+
+				<!-- 사용 불가능한 아이디 일때 -->	
+				<div class="msg-box center">
+					<strong>abcdef111</strong>은 <strong class="no">사용 불가능</strong> 합니다.
+				</div>
+			
+			</div> <!-- /.modal-body -->
+			
+			<!-- .modal-footer : 모달 하단 영역 -->
+			<div class="modal-footer">
+				<a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+				<a href="#" class="btn btn-primary">확인</a>
+			</div> <!-- /.modal-footer -->
+
+		</div> <!-- /.modal-content -->
+	</div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-overlap -->
+
+
+<!-- #modal-confirm -->
+<div id="modal-confirm" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+				</button>
+			</div> <!-- /.modal-header -->
+			
+			<div class="modal-body">
+
+				<div class="msg-box center">
+					변경사항을 <strong>저장</strong>하시겠습니까?
+				</div>
+			
+			</div> <!-- /.modal-body -->
+			
+			<!-- .modal-footer : 모달 하단 영역 -->
+			<div class="modal-footer">
+				<a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+				<a href="#" class="btn btn-primary">저장</a>
+			</div> <!-- /.modal-footer -->
+
+		</div> <!-- /.modal-content -->
+	</div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-confirm -->
+
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
