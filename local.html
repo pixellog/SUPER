@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SK Planet 총괄 어드민 - 건설사 현황</title>
+    <link rel="stylesheet" href="css/super.css">
+</head>
+<body>
+
+<!-- #top : 상단 영역 -->
+<header id="top" class="fixed-top">
+
+    <!-- .top-header : 로고 / 상단메뉴 영역 -->
+    <div class="top-header">
+        <div class="container">
+            <!-- .logo : 로고 -->
+            <a class="logo" href="."><img src="img/skp-logo.svg" alt="SK Planet" height="36"><span>RBI 건설 모니터링 시스템</span></a>
+            <!-- .nav : 상단메뉴 -->
+            <ul class="nav">
+                <li class="nav-item"><a href="login.html" class="nav-link">관리자님 <em>로그아웃</em></a></li>
+            </ul> <!-- /.nav -->
+        </div> <!-- /.container -->
+    </div> <!-- /.top-header -->
+
+    <!-- .top-menu : 현장선택 / 메뉴 영역 -->
+    <div class="top-menu">
+        <div class="container">
+            <div class="top-menu-row">
+
+                <!-- .dropdown-group 선택 영역 -->
+                <div class="dropdown-group">
+                    <!-- .dropdown : 건설사 선택 -->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">현대건설</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href=".">현대건설</a>
+                            <a class="dropdown-item" href=".">옴니센스</a>
+                        </div>
+                    </div> <!-- /.dropdown -->
+
+                    <!-- .dropdown : 현장 선택 -->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">테헤란 237</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href=".">테헤란 237</a>
+                            <a class="dropdown-item" href=".">옴니센스 123</a>
+                        </div>
+                    </div> <!-- /.dropdown -->
+                </div> <!-- /.dropdown-group -->
+
+                <!-- .nav : 중간메뉴 -->
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="local.html">지자체 관리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="company.html">업체현황</a></li>
+                </ul> <!-- /.nav -->
+            </div> <!-- /.top-menu-row -->
+
+            <div class="tabs-primary mt-auto">
+                <!-- .nav : 하단메뉴 -->
+                <ul class="nav" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="list" href="#tabs-1">지자체 관리</a></li>
+                    <li class="nav-item ml-5"><a class="nav-link" data-toggle="list" href="#tabs-2">사용자 권한</a></li>
+                </ul> <!-- /.nav -->
+
+            </div> <!-- /.top-menu-row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.top-menu -->
+</header> <!-- /#top -->
+
+
+<!-- #main : 메인 영역 -->
+<div id="main">
+    <div class="container">
+
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                <div class="board text-center">
+                    <div class="board-header">
+                        <div class="board-row align-items-center">
+                            <div class="board-item">번호</div>
+                            <div class="board-item">지자체명</div>
+                            <div class="board-item">현장</div>
+                            <div class="board-item">사용자</div>
+                            <div class="board-item"></div>
+                            <div class="board-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="board-body">
+                        <div class="board-row align-items-center">
+                            <div class="board-item">6</div>
+                            <div class="board-item">서울</div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>현대건설 - 창경궁</li>
+                                    <li>현대견설 - 테헤란237</li>
+                                </ul>
+                            </div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0">
+                                    <li>1234</li>
+                                </ul>
+                            </div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none">편집</a></div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none" data-toggle="modal" data-target="#modal-delete">삭제</a></div>
+                        </div>
+                        <div class="board-row align-items-center">
+                            <div class="board-item">6</div>
+                            <div class="board-item">서울</div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>현대건설 - 창경궁</li>
+                                    <li>현대견설 - 테헤란237</li>
+                                </ul>
+                            </div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0">
+                                    <li>1234</li>
+                                </ul>
+                            </div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none">편집</a></div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none" data-toggle="modal" data-target="#modal-delete">삭제</a></div>
+                        </div>
+                        <div class="board-row align-items-center">
+                            <div class="board-item">6</div>
+                            <div class="board-item">서울</div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>현대건설 - 창경궁</li>
+                                    <li>현대견설 - 테헤란237</li>
+                                </ul>
+                            </div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0">
+                                    <li>1234</li>
+                                    <li>admin</li>
+                                </ul>
+                            </div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none">편집</a></div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none" data-toggle="modal" data-target="#modal-delete">삭제</a></div>
+                        </div>
+                        <div class="board-row align-items-center">
+                            <div class="board-item">6</div>
+                            <div class="board-item">서울</div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0 text-left">
+                                    <li>현대건설 - 창경궁</li>
+                                    <li>현대견설 - 테헤란237</li>
+                                </ul>
+                            </div>
+                            <div class="board-item">
+                                <ul class="list-unstyled mb-0">
+                                    <li>1234</li>
+                                </ul>
+                            </div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none">편집</a></div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none" data-toggle="modal" data-target="#modal-delete">삭제</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="#none" class="btn btn-primary px-5 shadow-sm ml-auto" data-toggle="modal" data-target="#modal-add">추가</a>
+                </div>
+            </div>
+            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                <div class="board">
+
+                    <div class="board-header text-center">
+                        <div class="board-row align-items-center">
+                            <div class="board-item">번호</div>
+                            <div class="board-item">권한</div>
+                            <div class="board-item">아이디</div>
+                            <div class="board-item"></div>
+                            <div class="board-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="board-body text-center">
+                        <div class="board-row align-items-center">
+                            <div class="board-item">6</div>
+                            <div class="board-item">운영자</div>
+                            <div class="board-item">admin</div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none">정보 수정</a></div>
+                            <div class="board-item"><a class="btn btn-secondary" href="#none" data-toggle="modal" data-target="#modal-delete">삭제</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="#none" class="btn btn-primary px-5 shadow-sm ml-auto" data-toggle="modal" data-target="#modal-modify">추가</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!-- /.container -->
+</div> <!-- /#main -->
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">Copyright SKPlanet. All Rights Reserved.</div>
+    </div>
+</footer>
+
+
+<!-- #modal-delete -->
+<div id="modal-delete" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+                </button>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+
+                <div class="msg-box center">
+                    서울 지자체를 삭제하시겠습니까?
+                </div>
+
+            </div> <!-- /.modal-body -->
+
+            <!-- .modal-footer : 모달 하단 영역 -->
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">저장</a>
+            </div> <!-- /.modal-footer -->
+
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-delete -->
+
+<!-- #modal-add -->
+<div id="modal-add" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">지자체 관리</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+                </button>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+
+                <div class="form-table">
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">지자체</label>
+                        </div>
+                        <div class="col">
+                            <div class="form-group form-inline hr-bottom">
+                                <div class="dropdown mr-2">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">지자체 선택</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href=".">선택1</a>
+                                        <a class="dropdown-item" href=".">선택2</a>
+                                        <a class="dropdown-item" href=".">선택3</a>
+                                    </div>
+                                </div> <!-- /.dropdown -->
+                                <small class="form-text form-helper">※ 원하는 자자체가 없으면 신규 지자체를 체크하여 입력하세요.</small>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox pt-0 pb-3">
+                                    <input class="custom-control-input" type="checkbox" id="check-new" checked="">
+                                    <label class="custom-control-label" for="check-new">신규 지자체</label>
+                                </div>
+                                <div class="form-group form-inline mb-0">
+                                    <input class="form-control w-50" type="text" placeholder="지자체 명을 입력하세요">
+                                    <small class="form-text form-helper ml-2">※ 지자체명 최대 10글자</small>
+                                </div>
+                            </div>
+                        </div> <!-- /.col -->
+                    </div> <!-- /.form-row -->
+
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">현장</label>
+                        </div>
+                        <div class="col">
+                            <div class="scroll-y" style="height: 185px; overflow-x: hidden; overflow-y:auto; border:1px solid #1c1d26; padding:12px">
+                                <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" checked><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" checked><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" disabled><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">현대건설 - 창경궁</label></div>
+                            </div>
+                        </div>
+                    </div><!-- /.form-row -->
+
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">사용자</label>
+                        </div>
+                        <div class="col">
+							<div class="scroll-y" style="height: 185px; overflow-x: hidden; overflow-y:auto; border:1px solid #1c1d26; padding:12px">
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" checked><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" checked><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="" disabled><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+								<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id=""><label class="custom-control-label" for="">관리자</label></div>
+							</div>
+						</div>
+                    </div><!-- /.form-row -->
+
+
+                </div> <!-- /.form-table -->
+
+            </div> <!-- /.modal-body -->
+
+            <!-- .modal-footer : 모달 하단 영역 -->
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">저장</a>
+            </div> <!-- /.modal-footer -->
+
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-add -->
+
+<!-- #modal-modify -->
+<div id="modal-modify" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">사용자 관리</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+                </button>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+
+                <div class="form-table">
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">권한</label>
+                        </div>
+                        <div class="col">
+                            <div class="form-group form-inline">
+                                <div class="dropdown mr-2">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">일반 사용자</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href=".">사용자1</a>
+                                        <a class="dropdown-item" href=".">사용자2</a>
+                                        <a class="dropdown-item" href=".">사용자3</a>
+                                    </div>
+                                </div> <!-- /.dropdown -->
+                            </div>
+                        </div> <!-- /.col -->
+                    </div> <!-- /.form-row -->
+
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">아이디</label>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="아이디를 입력하세요">
+                            <a href="#" class="btn btn-secondary">중복체크</a>
+                            <small class="form-text form-helper">※ 아이디는 입력 제한이 없습니다.</small>
+                        </div>
+                    </div><!-- /.form-row -->
+
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label class="tit">비밀번호</label>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="password" placeholder="비밀번호를 입력하세요">
+                            <small class="form-text form-helper">※ 비밀번호는 입력 제한이 없습니다.</small>
+                        </div>
+                    </div><!-- /.form-row -->
+
+
+                </div> <!-- /.form-table -->
+
+            </div> <!-- /.modal-body -->
+
+            <!-- .modal-footer : 모달 하단 영역 -->
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">저장</a>
+            </div> <!-- /.modal-footer -->
+
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-modify -->
+
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

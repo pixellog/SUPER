@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SK Planet 총괄 어드민 - 건설사 현황</title>
+	<link rel="stylesheet" href="css/super.css">
+</head>
+<body>
+
+<!-- #top : 상단 영역 -->
+<header id="top" class="fixed-top">
+	
+	<!-- .top-header : 로고 / 상단메뉴 영역 -->
+	<div class="top-header">
+		<div class="container">
+			<!-- .logo : 로고 -->
+			<a class="logo" href="."><img src="img/skp-logo.svg" alt="SK Planet" height="36"><span>RBI 건설 모니터링 시스템</span></a>
+			<!-- .nav : 상단메뉴 -->
+			<ul class="nav">
+				<li class="nav-item"><a href="login.html" class="nav-link">관리자님 <em>로그아웃</em></a></li>
+			</ul> <!-- /.nav -->
+		</div> <!-- /.container -->
+	</div> <!-- /.top-header -->
+
+	<!-- .top-menu : 현장선택 / 메뉴 영역 -->
+	<div class="top-menu">
+		<div class="container">
+			<div class="top-menu-row">
+				
+				<!-- .dropdown-group 선택 영역 -->
+				<div class="dropdown-group">
+					<!-- .dropdown : 건설사 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">건설사 선택</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href=".">현대건설</a>
+							<a class="dropdown-item" href=".">옴니센스</a>
+						</div>
+					</div> <!-- /.dropdown -->
+					
+					<!-- .dropdown : 현장 선택 -->
+					<div class="dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">현장 선택</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href=".">테헤란 237</a>
+							<a class="dropdown-item" href=".">옴니센스 123</a>
+						</div>
+					</div> <!-- /.dropdown -->
+				</div> <!-- /.dropdown-group -->
+
+				<!-- .nav : 중간메뉴 -->
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="company.html">건설사 현황</a></li>
+				</ul> <!-- /.nav -->
+			</div> <!-- /.top-menu-row -->
+		</div> <!-- /.container -->	
+	</div> <!-- /.top-menu -->
+</header> <!-- /#top -->
+
+
+<!-- #main : 메인 영역 -->
+<div id="main">
+	<div class="container">
+	
+		<!-- .section : 건설사 현황 -->
+		<div class="section">
+			<div class="section-header h2">
+				<h2>건설사 현황</h2>
+				<div class="nav">
+					<div class="nav-item"><a href="local.html" class="btn btn-secondary add">+ 건설사 추가</a></div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="board">
+
+					<div class="board-header">
+						<div class="board-row">
+							<div class="board-item num center">번호</div>
+							<div class="board-item company">건설사명 (현장수)</div>
+							<div class="board-item">로고/시스템명</div>
+						</div>
+					</div>
+
+					<div class="board-body">
+
+						<!-- 등록된 없체가 없을 때---->
+						<div class="board-row">
+							<div class="board-item nodata">등록된 업체가 없습니다.</div>
+						</div>
+
+						<!-- 등록된 없체가 있을 때---->
+						<div class="board-row">
+							<div class="board-item num center">1</div>
+							<div class="board-item company wrap"><a href="company-view.html">현대건설 (3)</a></div>
+							<div class="board-item wrap"><a href="company-view.html"><img class="logo-sample-s" src="img/logo-hyundai.png">RBI 건설 모니터링 시스템</a></div>
+						</div>
+						<div class="board-row">
+							<div class="board-item num center">2</div>
+							<div class="board-item company wrap"><a href="company-view.html">현대건설 (3)</a></div>
+							<div class="board-item wrap"><a href="company-view.html"><img class="logo-sample-s" src="img/logo-hyundai.png">RBI 건설 모니터링 시스템</a></div>
+						</div>
+						<div class="board-row">
+							<div class="board-item num center">3</div>
+							<div class="board-item company wrap"><a href="company-view.html">현대건설 (3)</a></div>
+							<div class="board-item wrap"><a href="company-view.html"><img class="logo-sample-s" src="img/logo-hyundai.png">RBI 건설 모니터링 시스템</a></div>
+						</div>
+					</div>
+				</div> <!-- /.board -->
+			</div> <!-- /.section-body -->
+			<div class="section-footer">
+				<ul class="pagination">
+					<li class="page-item disabled"><a class="page-link prev" href="#"><i class="left"></i> 이전</a></li>
+					<li class="page-item active"><a class="page-link num" href="#">1</a></li>
+					<li class="page-item"><a class="page-link num" href="#">2</a></li>
+					<li class="page-item"><a class="page-link num" href="#">3</a></li>
+					<li class="page-item"><a class="page-link next" href="#">다음 <i class="right"></i></a></li>
+				</ul>
+			</div> <!-- /.section-footer -->
+		</div> <!-- /.section -->
+
+	</div> <!-- /.container -->
+</div> <!-- /#main -->
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="copyright">Copyright SKPlanet. All Rights Reserved.</div>
+	</div>
+</footer>
+
+
+<!-- #modal-addition -->
+<div id="modal-addition" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">현장추가</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"><img src="img/close.svg" alt="닫기"></span>
+				</button>
+			</div> <!-- /.modal-header -->
+			
+			<div class="modal-body">
+
+				<div class="form-table">
+					<div class="form-row">
+						<div class="col-2">
+							<label class="tit">건설사</label>	
+						</div>
+						<div class="col">
+							<div class="form-group form-inline dis"><!-- class에서 "dis"가 있으면 비활성화-->	
+								<div class="dropdown mr-2">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">건설사 선택</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item active" href="#">건설사 #1</a>
+										<a class="dropdown-item" href="#">건설사 #2</a>
+									</div>
+								</div> <!-- /.dropdown -->
+								<small class="form-text form-helper">※ 원하는 건설사가 없으면 신규 건설사를 체크하여 입력하세요.</small>								
+							</div>
+							
+							<div class="form-group hr-top">
+								<div class="custom-control custom-checkbox mb-2">
+									<input class="custom-control-input" type="checkbox" id="check-new" checked="">
+									<label class="custom-control-label" for="check-new">신규건설사</label><!--신규 건설사 체크하면 아래 영역 활성화-->
+								</div>
+							</div>
+
+							<div class="form-group"><!-- class에서 "dis"가 있으면 비활성화-->	
+								<div class="form-inline">					
+									<input class="form-control mb-2 w-50" type="text" placeholder="건설사명을 입력하세요">
+									<small class="form-text form-helper bl">※ 건설사명 최대 10글자</small>
+								</div>
+								<textarea rows="2" class="form-control w-100" placeholder="시스템명을 입력하세요"></textarea>
+								<div class="form-inline">								
+									<a href="#" class="btn btn-secondary prv">미리보기 (사용자 화면)</a>
+									<a href="#" class="btn btn-secondary prv">미리보기 (건설사 어드민)</a>
+								</div>
+								<small class="form-text form-helper">※ 시스템 명칭은 최대 2줄까지 입력 가능. 줄바꿈 기능을 활용하여 입력하세요.</small>														
+								<br>
+								<div class="form-inline">
+									<img class="logo-sample" src="img/logo-sample.png">
+									<div class="custom-file w-40 mr-2">
+										<label class="btn btn-secondary logofile" for="customFile">로고등록</label>
+										<input type="file" class="custom-file-input" id="customFile">										
+									</div>
+								</div>	
+								<small class="form-text form-helper">※ 로고는 배경이 투명한 png, 600x200 pixel 크기로 업로드하세요.</small>
+								<br>
+							</div>
+
+						</div> <!-- /.col -->
+					</div> <!-- /.form-row -->
+
+					<div class="form-row">
+						<div class="col-2">
+							<label class="tit">현장명</label>
+						</div>
+						<div class="col">
+							<input class="form-control w-100" type="text" placeholder="현장명을 입력하세요.">
+							<small class="form-text form-helper">※ 현장명은 최대 10글자까지 등록 가능합니다.</small>
+						</div>
+					</div><!-- /.form-row -->
+
+					<div class="form-row">
+						<div class="col-2">
+							<label class="tit">현장코드</label>
+						</div>
+						<div class="col">
+							<input class="form-control w-40" type="text" placeholder="현장코드를 입력하세요.">
+						</div>
+					</div><!-- /.form-row -->					
+
+				</div> <!-- /.form-table -->
+			
+			</div> <!-- /.modal-body -->
+			
+			<!-- .modal-footer : 모달 하단 영역 -->
+			<div class="modal-footer">
+				<a href="#" class="btn btn-secondary" data-dismiss="modal">취소</a>				
+				<a href="#" class="btn btn-primary">적용</a>
+			</div> <!-- /.modal-footer -->
+
+		</div> <!-- /.modal-content -->
+	</div> <!-- /.modal-dialog -->
+</div> <!-- /#modal-addition -->
+
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

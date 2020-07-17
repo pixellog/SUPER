@@ -8531,3 +8531,17 @@ textarea.form-control {
     padding: 0 20px; } }
 
 /*# sourceMappingURL=super.css.map */
+
+.tabs-primary .nav-link.active {
+  color: #fff;
+  border-bottom-color: #2d94f0;
+}
+.tabs-primary .nav-link {
+  color: rgba(255, 255, 255, 0.4);
+  border-bottom: 3px solid #2d94f0;
+  border-bottom-color: transparent;
+  margin-bottom: -3px;
+  padding: 26px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
